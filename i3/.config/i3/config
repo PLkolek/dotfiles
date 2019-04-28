@@ -179,9 +179,10 @@ hide_edge_borders both
 bindsym $mod+i exec firefox
 
 assign [class="Firefox"] 1
-assign [class="jetbrains-idea-ce" instance="sun-awt-X11-XFramePeer"] 2
 assign [class="atom"] 2
 assign [class="discord"] 4
+assign [class="jetbrains-idea-ce" instance="sun-awt-X11-XFramePeer" title=".*IntelliJ IDEA.*"] 2
+#assign [class="jetbrains-idea-ce" instance="sun-awt-X11-XFramePeer" ] 2
 
 workspace_auto_back_and_forth yes
 exec feh --bg-scale /usr/share/wallpapers/ColdRipple/contents/images/1920x1080.jpg
@@ -189,3 +190,8 @@ exec compton -b
 
 gaps inner 4
 smart_gaps on
+
+
+no_focus [class="plasmashell"]
+no_focus [window_role="pop-up"]
+no_focus [window_type="notification"]
